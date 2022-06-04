@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="100dp"
+        android:id="@+id/imgContact"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="100dp"/>
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtContactName"
+        app:layout_constraintLeft_toRightOf="@id/imgContact"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        android:textColor="@color/purple_700"/>
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/txtPhoneNumber"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/txtContactName"
+        app:layout_constraintLeft_toRightOf="@id/imgContact"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/txtEmailID"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/txtPhoneNumber"
+        app:layout_constraintLeft_toRightOf="@id/imgContact"
+        android:layout_height="wrap_content"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
