@@ -64,14 +64,13 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressLint("NotifyDataSetChanged")
-    @Override
+      @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if(data != null) {
             Contact newContact = (Contact) data.getSerializableExtra("contact");
             contactArrayList.add(newContact);
             Log.e("tag","error");
-        //  ContactAdapter.notifyDataSetChanged();
+         //ContactAdapter.notifyDataSetChanged();
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
