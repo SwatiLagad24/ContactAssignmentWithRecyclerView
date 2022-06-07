@@ -9,7 +9,7 @@
         android:id="@+id/imgContact"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_height="110dp"/>
+        android:layout_height="100dp"/>
     <TextView
         android:layout_marginLeft="16dp"
         android:layout_width="wrap_content"
